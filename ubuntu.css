@@ -6,6 +6,27 @@
 }
 
 
+@-webkit-keyframes WavyGrad {
+    0%{background-position:47% 0%}
+    50%{background-position:54% 100%}
+    100%{background-position:47% 0%}
+}
+@-moz-keyframes WavyGrad {
+    0%{background-position:47% 0%}
+    50%{background-position:54% 100%}
+    100%{background-position:47% 0%}
+}
+@-o-keyframes WavyGrad {
+    0%{background-position:47% 0%}
+    50%{background-position:54% 100%}
+    100%{background-position:47% 0%}
+}
+@keyframes WavyGrad {
+    0%{background-position:47% 0%}
+    50%{background-position:54% 100%}
+    100%{background-position:47% 0%}
+}
+
 html {
 	margin: 0;
 	padding: 0;
@@ -18,12 +39,17 @@ body {
 	margin: 0; 
 	padding: 0;
     line-height: 1.8;
-    background-image: url(https://sites.duke.edu/ubuntu/files/2017/12/cropped-18193107_1505793489493955_9140661957431583385_o-1.jpg);
-    background-repeat: repeat;
+    background: linear-gradient(173deg, #2fd9ad, #24a6da, #c324da, #da8024, #e64646);
+    background-size: 1000% 1000%;
+    -webkit-animation: WavyGrad 35s ease infinite;
+    -moz-animation: WavyGrad 35s ease infinite;
+    -o-animation: WavyGrad 35s ease infinite;
+    animation: WavyGrad 35s ease infinite;
 }
 
 h1 {
-    background: white;
+    color: white;
+    font-size: 70px;
 }
 #ubuapp {
     opacity: 0.80;
@@ -35,6 +61,10 @@ h1 {
 }
 .header {
     padding: 50px 0px 0px 0px;
+}
+.closing {
+    color: white;
+    font-size: 15px;
 }
 #currentStatus {
     color: green;
