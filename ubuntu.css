@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+@keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 0.80; }
+}
+
+
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+
+    font-family: 'Ubuntu', sans-serif;
+	color: orange; 
+    text-align: center;
+	margin: 0; 
+	padding: 0;
+    line-height: 1.8;
+    background-image: url(irishLad.JPG);
+    background-repeat: repeat;
+}
+
+h1 {
+    background: white;
+}
+#ubuapp {
+    opacity: 0.80;
+    background: white;
+    animation-name: fade-in;
+    animation-duration: 5s;
+    padding: 0px 0px 50px 0px;
+    
+}
+.header {
+    padding: 50px 0px 0px 0px;
+}
+#currentStatus {
+    color: green;
+    font-size: 100px;
+    opacity: 5.0;
+    padding: 75px 0px 0px 0px;
+}
+
+#time {
+    color: black;
+    padding: 0px 0px 25px 0px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- always put your name in your work -->
+    <meta name="author" content="Robbie Ha">
+    <!-- stop the web browser from ever caching this page or its images -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <!-- libraries neded for this page -->
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vuefire/1.4.5/vuefire.js"></script>
+
+    <!-- support for this page -->
+    <link rel="stylesheet" href="ubuntu.css">
+    <script src="ubuntu.js" async></script>
+    <title>David is NOT a Boob</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Is Ubu Common Room Lit????</h1>
+    </header>
+    <br>
+    <div id="ubuapp" class = "container">
+        <section v-cloak>
+            <div v-for="events in currentStatus">
+                <h2 id="currentStatus">{{ events.message }}</h2>
+                <p id="time">Update Time: {{ events.date }}</p>
+                <input class="updateStatus"
+                       placeholder="How lit is Ubu CR?"
+                       v-model="newUbu">
+                <button @click="updateStatus(events)">Update!</button>
+            </div>
+        </section>
+    </div>
+    <br>
+    <br>
+    <p>Made by the best fam</p>
+</body>
+</html>
