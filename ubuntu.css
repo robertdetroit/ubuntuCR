@@ -52,6 +52,7 @@ h1 {
     font-size: 70px;
 }
 #ubuapp {
+    border-radius: 50px;
     opacity: 0.80;
     background: white;
     animation-name: fade-in;
